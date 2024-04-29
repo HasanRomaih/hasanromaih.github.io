@@ -3,3 +3,9 @@ h1{
     text-align: center;
     color: whitesmoke;
 }
+h2{
+    background-color: maroon;
+    color: whitesmoke;
+    max-width: 80%;
+    max-height: fit-content;
+}
