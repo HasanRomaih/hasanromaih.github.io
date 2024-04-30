@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 h1{
     background-color: cadetblue;
     text-align: center;
@@ -8,4 +11,7 @@ h2{
     color: whitesmoke;
     max-width: 80%;
     max-height: fit-content;
+}
+p{
+    color: aliceblue;
 }
