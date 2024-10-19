@@ -541,10 +541,19 @@ gameStarted: true
 &gt; [[عودة-&gt;إلى الخزانة]]</tw-passagedata><tw-passagedata pid="23" name="ازرق" tags="" position="175,250" size="100,100">قميص مخطط بالأزرق والأزرق الفاتح، ليس لديك أي علم بأهميته ولكنه يشابه أحد الكتب التي تتحدث عن التصرف بوعي في مكتبتك.
 
 &gt; [[عودة-&gt;إلى الخزانة]]</tw-passagedata><tw-passagedata pid="24" name="ch3" tags="" position="200,1400" size="100,100">ch. 3
-wip - hr</tw-passagedata><tw-passagedata pid="25" name="options" tags="" position="2700,100" size="100,100">Work in Progress
-&gt; {link to: &#39;tipsntricks&#39;, label: &#39;تعليمات سريعة - لا تدخل&#39;}
+wip - hr</tw-passagedata><tw-passagedata pid="25" name="options" tags="" position="2700,100" size="100,100">mewm: 0
+--
+[javascript]
+if (trail[trail.length - 2] != &#39;tipsntricks&#39;){
+	var mewm = trail.length - 2
+	lastPassage = trail[mewm]
+ }
+[continue]
+Work in Progress
+&gt; {link to: &#39;tipsntricks&#39;, label: &#39;تعليمات سريعة&#39;}
 &gt; {restart link, label: &#39;إعادة اللعبة&#39;} 
-&gt; {back link, label: &quot;عودة&quot;}</tw-passagedata><tw-passagedata pid="26" name="الانتقال للفصل الأول." tags="" position="1175,100" size="100,100">
+&gt; [[backa]]
+</tw-passagedata><tw-passagedata pid="26" name="الانتقال للفصل الأول." tags="" position="1175,100" size="100,100">
 &lt;blockquote&gt;الفصل الأول: الخيال المعكوس&lt;/blockquote&gt;
 
 
@@ -614,4 +623,6 @@ gameStarted: true
 --
 بسمه تعالى.
 
-لكل شيء مقدمة، ومقدمة هذه القصة هي [[ومضة]] انبثقت من نار لا تنطفئ.</tw-passagedata></tw-storydata></html>
+لكل شيء مقدمة، ومقدمة هذه القصة هي [[ومضة]] انبثقت من نار لا تنطفئ.</tw-passagedata><tw-passagedata pid="36" name="backa" tags="" position="2900,100" size="100,100">عودة...
+[javascript]
+window.setTimeout(() =&gt; go(lastPassage), 2000);</tw-passagedata></tw-storydata></html>
